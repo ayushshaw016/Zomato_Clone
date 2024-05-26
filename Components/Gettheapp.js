@@ -1,6 +1,8 @@
 "use client";
 import Image from "next/image";
 import { Nightlife } from "../Assets/Homepage/index.js";
+import mobileapp from "../Assets/Homepage/mobileapp.png";
+
 import { useRef } from "react";
 const GettheApp = () => {
   const emailref = useRef(null);
@@ -14,7 +16,7 @@ const GettheApp = () => {
       <div className="flex flex-col md:flex-row justify-around bg-[#efefea]">
         <div className="my-16">
           <Image
-            src={Nightlife}
+            src={mobileapp}
             className=""
             style={{ height: "60vh", width: "20vw" }}
           />

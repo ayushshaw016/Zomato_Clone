@@ -73,7 +73,7 @@ const Localatiescard = ({ localitydata }) => {
 const Nearme = ({ options }) => {
   return (
     <>
-      <div>
+      <div className="py-16">
         {options.map((data, index) => (
           <div
             className=" border border-solid border-gray-300 text-2xl mt-6 rounded-xl  hover:shadow-xl"
