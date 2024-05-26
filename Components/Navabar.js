@@ -13,11 +13,11 @@ const Navbar = () => {
         <nav>
           <div className="flex flex-row justify-around  pt-6">
             <div className="text-lg">Get the App</div>
-            <div className="text-2xl">
+            <div className="text-xl">
               <ul className="flex flex-row">
-                <li className="mx-3">Investor Relations</li>
-                <li className="mx-3">Add Restaurant</li>
-                <li className="mx-3">Ayush</li>
+                <li className="mx-10">Investor Relations</li>
+                <li className="mx-10">Add Restaurant</li>
+                <li className="mx-10">Ayush</li>
               </ul>
             </div>
           </div>

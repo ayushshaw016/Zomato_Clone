@@ -49,4 +49,45 @@ const Hmpgcard2 = ({ cards }) => {
     </>
   );
 };
-export { Hmpgcard1, Hmpgcard2 };
+const Localatiescard = ({ localitydata }) => {
+  return (
+    <div className="grid grid-cols-3 gap-6 mt-8 mb-16 mx-6">
+      {localitydata.map((data, index) => (
+        <div
+          className="mx-4 hover:cursor-pointer border border-solid border-gray-300 rounded-xl px-4 hover:shadow-lg"
+          key={index}
+        >
+          <p className="text-2xl my-2" style={{ wordSpacing: "0.25rem" }}>
+            {data.placename}
+          </p>
+          <p className="text-lg my-2">
+            {data.count}{" "}
+            <span className="flex float-right text-2xl ">&gt;</span>
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const Nearme = ({ options }) => {
+  return (
+    <>
+      <div>
+        {options.map((data, index) => (
+          <div
+            className=" border border-solid border-gray-300 text-2xl mt-6 rounded-xl  hover:shadow-xl"
+            key={index}
+          >
+            <select className="w-full px-6 py-6 hover:cursor-pointer" disabled>
+              <option value={data.text} className="text-3xl">
+                {data.text}
+              </option>
+            </select>
+          </div>
+        ))}
+      </div>
+    </>
+  );
+};
+export { Hmpgcard1, Hmpgcard2, Localatiescard, Nearme };

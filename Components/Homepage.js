@@ -1,5 +1,7 @@
-import { Hmpgcard1, Hmpgcard2 } from "./Cards";
-import bg_image from "../Assets/navbar_img/navbar_bg.png";
+import { Hmpgcard1, Hmpgcard2, Localatiescard, Nearme } from "./Cards";
+import { GettheApp } from "./Gettheapp";
+// import bg_image from "../Assets/navbar_img/navbar_bg.png";
+import { Footer } from "./Footer";
 import {
   Dining,
   Nightlife,
@@ -52,24 +54,92 @@ const Homepage = () => {
       places: "32 places",
     },
   ];
+
+  const localitydata = [
+    {
+      placename: "Cannaught Place",
+      count: "278 places",
+    },
+    {
+      placename: "Sector 29",
+      count: "143 places",
+    },
+    {
+      placename: "Sector 18, Noida",
+      count: "198 places",
+    },
+    {
+      placename: "Rajouri Garden",
+      count: "343 places",
+    },
+    {
+      placename: "Saket",
+      count: "109 places",
+    },
+    {
+      placename: "DLF Cyber City",
+      count: "172 places",
+    },
+    {
+      placename: "Golf Coourse Road",
+      count: "129 places",
+    },
+    {
+      placename: "DLF Phase 4",
+      count: "209 places",
+    },
+    {
+      placename: "See More",
+      count: "188 places",
+    },
+  ];
+
+  const options = [
+    {
+      text: "Popular cuisines near me",
+    },
+    {
+      text: "Popular restaurant types near me",
+    },
+    {
+      text: "Top Restaurant chains",
+    },
+    {
+      text: "Cities we deliver to",
+    },
+  ];
   return (
     <>
       <div className="mx-6 mt-16 mb-8">
         <Hmpgcard1 cards={card1data} />
       </div>
-      <div className="my-4">
-        <div className="mx-12">
-          <h2 className="text-4xl font-bold">Collections</h2>
-          <p className="text-xl mt-3">
+      <div className="my-4 mx-12">
+        <h2 className="text-4xl font-bold ml-16">Collections</h2>
+        <div className="flex flex-col lg:flex-row justify-around">
+          <div className="text-xl mt-3">
             Explore curated lists of top restaurants, cafes, pubs, and bars in
             Delhi NCR, based on trends
-            <span className="text-red-400 float-right">
-              All Collectiuon in Delhi NCR &gt;
-            </span>
-          </p>
+          </div>
+          <div className="text-red-400  mt-3">
+            All Collectiuon in Delhi NCR &gt;
+          </div>
         </div>
         <Hmpgcard2 cards={card2data} />
       </div>
+      <div className="mx-4 lg:mx-16 ">
+        <h2 className="text-4xl mb-8">
+          Popular Localities in and around Delhi NCR
+        </h2>
+        <Localatiescard localitydata={localitydata} />
+      </div>
+      <GettheApp />
+      <div className="bg-slate-50">
+        <div className="mx-20 mt-6">
+          <h2 className="text-4xl mb-4">Explore options near me</h2>
+          <Nearme options={options} />
+        </div>
+      </div>
+      <Footer />
     </>
   );
 };
