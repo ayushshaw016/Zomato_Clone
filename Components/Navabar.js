@@ -10,13 +10,13 @@ const Navbar = () => {
           backgroundImage: `url(${bg_image})`,
           height: "60vh",
         }}
-        className="bg-black text-white"
+        className="text-white bg-black"
       >
         <nav>
           <div className="flex flex-row justify-around  pt-6">
             <div className="text-lg">Get the App</div>
             <div className="text-xl">
-              <ul className="flex flex-row">
+              <ul className="flex flex-col md:flex-row">
                 <li className="mx-10">Investor Relations</li>
                 <li className="mx-10">Add Restaurant</li>
                 <li className="mx-10">

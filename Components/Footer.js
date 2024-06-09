@@ -72,51 +72,70 @@ const Footer = () => {
             <p className="text-md text-gray-600 my-2">Sitemap</p>
           </div>
           <div>
-            <h2 className="tracking-widest text-xl">Social Links</h2>
-            <span className="my-2 inline-block ml-2">
-              <Link href="">
-                <Image src={flag} className="rounded-full w-6 h-6" />
-              </Link>
-            </span>
-            <span className="my-2 inline-block ml-2">
-              <Link href="">
-                <Image src={flag} className="rounded-full w-6 h-6" />
-              </Link>
-            </span>
-            <span className="my-2 inline-block ml-2">
-              <Link href="">
-                <Image src={flag} className="rounded-full w-6 h-6" />
-              </Link>
-            </span>
-            <span className="my-2 inline-block ml-2">
-              <Link href="">
-                <Image src={flag} className="rounded-full w-6 h-6" />
-              </Link>
-            </span>
-            <span className="my-2 inline-block ml-2">
-              <Link href="">
-                <Image src={flag} className="rounded-full w-6 h-6" />
-              </Link>
-            </span>
-            <p className="border border-solid border-black bg-[#0e0e30] rounded-lg">
-              <span className="inline-block mb-1 mx-3">
-                <Image src={flag} className="w-6 h-6" />
+            <div>
+              <h2 className="tracking-widest text-xl">Social Links</h2>
+              <span className="my-2 inline-block ml-2">
+                <Link href="">
+                  <Image src={flag} className="rounded-full w-6 h-6" />
+                </Link>
               </span>
-              <span className="inline-block   text-white">
-                <p className="text-xs">Download on the</p>
-                <p className="text-lg font-bold">App Store</p>
+              <span className="my-2 inline-block ml-2">
+                <Link href="">
+                  <Image src={flag} className="rounded-full w-6 h-6" />
+                </Link>
               </span>
-            </p>
-            <p className="border border-solid border-black bg-[#0e0e30] rounded-lg mt-4">
-              <span className="inline-block mb-1 mx-3">
-                <Image src={flag} className="w-6 h-6" />
+              <span className="my-2 inline-block ml-2">
+                <Link href="">
+                  <Image src={flag} className="rounded-full w-6 h-6" />
+                </Link>
               </span>
-              <span className="inline-block   text-white">
-                <p className="text-xs">Get it on</p>
-                <p className="text-lg font-bold">Google Play</p>
+              <span className="my-2 inline-block ml-2">
+                <Link href="">
+                  <Image src={flag} className="rounded-full w-6 h-6" />
+                </Link>
               </span>
-            </p>
+              <span className="my-2 inline-block ml-2">
+                <Link href="">
+                  <Image src={flag} className="rounded-full w-6 h-6" />
+                </Link>
+              </span>
+            </div>
+            <div className="flex flex-col">
+              <div
+                className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4  "
+                style={{ width: "20vw" }}
+              >
+                <span className="inline-block mb-1 mx-3">
+                  <Image src={flag} className="w-6 h-6" />
+                </span>
+                <span className="inline-block   text-white">
+                  <p className="text-xs">Download on the</p>
+                  <p className="text-lg font-bold">App Store</p>
+                </span>
+              </div>
+              <div
+                className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4"
+                style={{ width: "20vw" }}
+              >
+                <span className="inline-block mb-1 mx-3">
+                  <Image src={flag} className="w-6 h-6" />
+                </span>
+                <span className="inline-block   text-white">
+                  <p className="text-xs">Get it on</p>
+                  <p className="text-lg font-bold">Google Play</p>
+                </span>
+              </div>
+            </div>
           </div>
+          {/* <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4">
+            <span className="inline-block">
+              <Image src={Nightlife} className="w-10 h-10 mt-2 mx-2" />
+            </span>
+            <span className="inline-block mx-4 text-white">
+              <p className="text-sm font-thin">GET IT ON</p>
+              <p className="text-md">Google Play</p>
+            </span>
+          </div> */}
         </div>
         <p className="border border-solid border-t-2  mx-4 md:mx-8 lg:mx-24"></p>
         <p className="mx-4 md:mx-8 lg:mx-24 mt-4 text-gray-700">

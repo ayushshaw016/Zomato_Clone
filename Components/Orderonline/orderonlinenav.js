@@ -4,7 +4,7 @@ import flag from "../../Assets/navbar_img/flag.png";
 const Orderonlinenavbar = () => {
   return (
     <>
-      <nav className="px-3 lg:px-16">
+      <nav className="px-3 lg:px-16 bg-white">
         <ul className="flex flex-row justify-between">
           <li className="text-6xl font-bold">zomato</li>
 

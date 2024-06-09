@@ -113,26 +113,30 @@ const Homepage = () => {
       <div className="mx-6 mt-16 mb-8">
         <Hmpgcard1 cards={card1data} />
       </div>
-      <div className="my-4 mx-12">
-        <h2 className="text-4xl font-bold ml-16">Collections</h2>
-        <div className="flex flex-col lg:flex-row justify-around">
-          <div className="text-xl mt-3">
-            Explore curated lists of top restaurants, cafes, pubs, and bars in
-            Delhi NCR, based on trends
-          </div>
-          <div className="text-red-400  mt-3">
-            All Collectiuon in Delhi NCR &gt;
+      <div className="mt-4 mx-12">
+        <div className="">
+          <h2 className="text-4xl font-bold ml-16">Collections</h2>
+          <div className="flex flex-col lg:flex-row justify-around">
+            <div className="text-xl mt-3">
+              Explore curated lists of top restaurants, cafes, pubs, and bars in
+              Delhi NCR, based on trends
+            </div>
+            <div className="text-red-400  mt-3">
+              All Collectiuon in Delhi NCR &gt;
+            </div>
           </div>
         </div>
         <Hmpgcard2 cards={card2data} />
       </div>
-      <div className="mx-4 lg:mx-16 ">
+      <div className="mx-6 lg:mx-16 ">
         <h2 className="text-4xl mb-8">
           Popular Localities in and around Delhi NCR
         </h2>
-        <Localatiescard localitydata={localitydata} />
       </div>
-      <GettheApp />
+      <Localatiescard localitydata={localitydata} />
+      <div className="pl-16">
+        <GettheApp />
+      </div>
       <div className="bg-slate-50">
         <div className="mx-20 mt-6">
           <h2 className="text-4xl mb-4">Explore options near me</h2>

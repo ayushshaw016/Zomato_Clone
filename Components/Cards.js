@@ -2,10 +2,10 @@ import Image from "next/image";
 const Hmpgcard1 = ({ cards }) => {
   return (
     <>
-      <div className="flex flex-row  mx-2 ">
+      <div className="flex flex-col  md:flex-row  mx-2 ">
         {cards.map((data, index) => (
           <div
-            className="w-1/3 ml-8 border border-gray-400 border-solid rounded-3xl hover:scale-110 hover:cursor-pointer"
+            className="w-full md:w-1/3 ml-8 border border-gray-400 border-solid rounded-3xl hover:scale-110 hover:cursor-pointer mt-16 md:mt-0"
             key={index}
           >
             <Image
@@ -27,10 +27,10 @@ const Hmpgcard1 = ({ cards }) => {
 const Hmpgcard2 = ({ cards }) => {
   return (
     <>
-      <div className="flex flex-row mt-6 mb-16 mx-6">
+      <div className="flex md:flex-row mt-6 mb-16 mx-6 flex-col">
         {cards.map((data, index) => (
           <div
-            className="w-1/4 rounded-3xl mx-3 md:mx-4 hover:cursor-pointer"
+            className="w-full md:w-1/4 rounded-3xl mx-3 md:mx-4 hover:cursor-pointer mt-16 md:mt-0"
             key={index}
           >
             <Image src={data.img} style={{ width: "100vw", height: "50vh" }} />
