@@ -13,12 +13,11 @@ const GettheApp = () => {
   }
   return (
     <>
-      <div className="flex flex-col lg:flex-row justify-around bg-[#efefea] pl-16 md:ml-0  md:pl-0">
-        <div className="my-16">
+      <div className="flex flex-col lg:flex-row justify-around bg-[#efefea]  md:ml-0  md:pl-0">
+        <div className="">
           <Image
             src={mobileapp}
-            className=""
-            style={{ height: "60vh", width: "20vw" }}
+            className="w-[20vw] h-[60vh] hidden lg:block"
           />
         </div>
         <div className="my-16">
@@ -37,7 +36,7 @@ const GettheApp = () => {
             </div>
             <div className="mt-8">
               <span
-                className="text-white bg-red-400 text-xl mx-3 px-3 py-3 rounded-xl border border-solid border-black hover:cursor-pointer"
+                className="text-white bg-red-400 text-xl mr-3 px-3 py-3 rounded-xl border border-solid border-black hover:cursor-pointer"
                 onClick={() => handleemail()}
               >
                 Share App Link

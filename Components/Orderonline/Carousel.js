@@ -8,10 +8,13 @@ const Carousel_Online = ({ onlinedata }) => {
         style={{ "-ms-overflow-style": "none", "scrollbar-width": "none" }}
       >
         {onlinedata.map((data, index) => (
-          <div key={index} className="inline-block mx-6">
+          <div
+            key={index}
+            className="inline-block -ml-3 md:ml-0 md:mx-12 hover:cursor-pointer hover:scale-105 "
+          >
             <Image
               src={data.image}
-              className="rounded-full w-24 h-24 md:w-40 md:h-40 "
+              className="rounded-full w-28 h-28 md:w-40 md:h-40 "
             />
             <p className="text-center text-md md:text-2xl ">{data.item}</p>
           </div>
@@ -28,16 +31,16 @@ const Restaurants = ({ restaurantdata }) => {
         {restaurantdata.map((res, index) => (
           <div
             key={index}
-            className="inline-block mx-3 my-3 border border-solid border-gray-400 rounded-t-3xl"
+            className="inline-block mx-3 my-3 border border-solid border-gray-400 rounded-3xl hover:shadow-2xl hover:cursor-pointer hover:scale-110"
           >
             <Image
               src={res.photo}
-              className="w-full rounded-t-2xl"
-              style={{ height: "40vh" }}
+              className="w-full rounded-t-2xl h-[30vh] md:h-[40-vh]"
+              // style={{ height: "40vh" }}
             />
-            <div className="px-1">
-              <span className="inline-block float-left">
-                <p className="text-md md:text-lg">{res.name}</p>
+            <div className="px-1 flex justify-between items-start">
+              <span className="inline-block float-left ">
+                <p className="text-md md:text-lg text-wrap">{res.name}</p>
                 <p className="text-sm md:text-md text-gray-500 ">{res.type}</p>
               </span>
               <span className="inline-block float-right">
@@ -45,7 +48,7 @@ const Restaurants = ({ restaurantdata }) => {
                   {res.raiting}
                 </span>
                 <span className="block mt-1 font-sans tracking-widest text-md text-gray-400 font-thin">
-                  {res.amount}
+                  ₹{res.amount}
                 </span>
                 <span className="block text-sm font-bold">{res.dist}</span>
               </span>
