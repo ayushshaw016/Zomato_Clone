@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { rating } from "../Orderonline/Restaurnts/res";
 const DiningRes = ({ diningdata }) => {
   return (
     <>
@@ -24,6 +25,12 @@ const DiningRes = ({ diningdata }) => {
               <span className="inline-block float-right">
                 <span className="block mr-10 px-2 text-white bg-green-800 rounded-md mt-1">
                   {res.rating}
+                  <span className="inline-block">
+                    <Image
+                      src={rating}
+                      className="ml-3 mb-1 w-4 h-4 inline-block opacity-40 rounded-md"
+                    />
+                  </span>
                 </span>
                 <span className="block mt-1 font-sans tracking-widest text-md text-gray-400 font-thin">
                   ₹{res.cost} for one

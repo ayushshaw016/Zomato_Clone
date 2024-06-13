@@ -36,7 +36,7 @@ const GettheApp = () => {
             </div>
             <div className="mt-8">
               <span
-                className="text-white bg-red-400 text-xl mr-3 px-3 py-3 rounded-xl border border-solid border-black hover:cursor-pointer"
+                className="md:ml-2 text-white bg-red-400 text-xl mr-3 px-3 py-3 rounded-xl border border-solid border-black hover:cursor-pointer"
                 onClick={() => handleemail()}
               >
                 Share App Link

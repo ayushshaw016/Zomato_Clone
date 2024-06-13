@@ -11,7 +11,7 @@ import res10 from "../Restaurnts/res10.png";
 import res11 from "../Restaurnts/res11.png";
 import res12 from "../Restaurnts/res12.png";
 import res13 from "../Restaurnts/res13.png";
-
+import rating from "../Restaurnts/rating.png";
 export {
   res1,
   res10,
@@ -26,4 +26,5 @@ export {
   res7,
   res8,
   res9,
+  rating,
 };
