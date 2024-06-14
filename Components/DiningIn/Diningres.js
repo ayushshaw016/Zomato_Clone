@@ -11,31 +11,37 @@ const DiningRes = ({ diningdata }) => {
           >
             <Image
               src={res.ihmage}
-              className="w-full rounded-t-2xl h-[30vh] md:h-[40-vh] rounded-3xl"
+              className="w-full h-[20vh] md:h-[25vh] lg:h-[30vh]  rounded-md md:rounded-3xl"
               // style={{ height: "40vh" }}
             />
             <div className="ml-2 flex justify-between items-start">
               <span className="inline-block float-left ">
-                <p className="text-md md:text-lg text-wrap">{res.Name}</p>
-                <p className="text-sm md:text-md text-gray-500 ">{res.type}</p>
-                <p className="text-sm md:text-md text-gray-500 ">
+                <p className="text-sm sm:text-md md:text-lg text-wrap">
+                  {res.Name}
+                </p>
+                <p className="text-xs sm:text-sm md:text-md text-gray-500 ">
+                  {res.type}
+                </p>
+                <p className="text-xs sm:text-sm md:text-md text-gray-500 ">
                   {res.location}
                 </p>
               </span>
               <span className="inline-block float-right">
-                <span className="block mr-10 px-2 text-white bg-green-800 rounded-md mt-1">
+                <span className="text-xs md:text-md block mr-10 px-1 md:px-2 text-white bg-green-800 rounded-md mt-1">
                   {res.rating}
                   <span className="inline-block">
                     <Image
                       src={rating}
-                      className="ml-3 mb-1 w-4 h-4 inline-block opacity-40 rounded-md"
+                      className="ml-1 md:ml-3 mb-1 w-4 h-4 inline-block opacity-40 rounded-md"
                     />
                   </span>
                 </span>
-                <span className="block mt-1 font-sans tracking-widest text-md text-gray-400 font-thin">
+                <span className="block mt-1 font-sans tracking-widest text-xs md:text-md text-gray-400 font-thin">
                   ₹{res.cost} for one
                 </span>
-                <span className="block text-sm font-bold">{res.min}</span>
+                <span className="block text-xs md:text-md font-bold">
+                  {res.min}
+                </span>
               </span>
             </div>
           </div>

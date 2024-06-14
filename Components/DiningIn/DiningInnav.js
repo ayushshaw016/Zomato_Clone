@@ -228,29 +228,27 @@ const DiningInnav = () => {
             <span className="inline-block">
               <select
                 value="Ayush"
-                className="text-xl md:text-2xl lg:text-4xl hover:cursor-pointer"
+                className="text-md md:text-xl lg:text-3xl hover:cursor-pointer"
               >
-                <option className=" text-xl md:text-2xl  ">Profile </option>
-                <option className=" text-xl md:text-2xl  ">
-                  Notifications
-                </option>
-                <option className=" text-xl md:text-2xl  ">Bookmarks</option>
-                <option className=" text-xl md:text-2xl  ">Reviews</option>
-                <option className=" text-xl md:text-2xl  ">Networks</option>
-                <option className=" text-xl md:text-2xl  ">Find Friends</option>
-                <option className=" text-xl md:text-2xl  ">Settings</option>
-                <option className=" text-xl md:text-2xl  ">Logout</option>
+                <option className=" text-md md:text-lg  ">Profile </option>
+                <option className=" text-md md:text-lg  ">Notifications</option>
+                <option className=" text-md md:text-lg  ">Bookmarks</option>
+                <option className=" text-md md:text-lg  ">Reviews</option>
+                <option className=" text-md md:text-lg  ">Networks</option>
+                <option className=" text-md md:text-lg  ">Find Friends</option>
+                <option className=" text-md md:text-lg  ">Settings</option>
+                <option className=" text-md md:text-lg  ">Logout</option>
               </select>
             </span>
           </li>
         </ul>
       </nav>
       <div className="px-4  bg-white">
-        <p className="text-md md:text-lg lg:text-xl md:pt-6 text-gray-600">
+        <p className="text-md md:text-lg lg:text-xl md:pt-4 text-gray-600">
           Home / India / Delhi NCR / Central Delhi /{" "}
           <span className="text-gray-400">Connaught Place Restaurants</span>
         </p>
-        <div className="pt-4 md:pt-8 lg:pt-12 flex flex-row justify-around md:justify-start">
+        <div className="pt-3 md:pt-4 lg:pt-6 flex flex-row justify-around md:justify-start">
           <div className="mr-8 border-b-4  border-solid border-red-700 my-1 md:my-4">
             <span className="inline-block">
               <Image
@@ -280,7 +278,7 @@ const DiningInnav = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row px-4 bg-white">
+      <div className="flex flex-col md:flex-row px-4 bg-white pt-4 ">
         <div className="flex justify-around md:pt-4">
           <div className="inline-block border border-gray-300 border-solid px-3 py-2 text-md md:text-lg rounded-lg text-gray-400 hover:cursor-pointer hover:bg-gray-100 mr-4">
             Filters
@@ -337,7 +335,7 @@ const DiningInnav = () => {
       </div>
 
       <div className="px-2 md:px-6 bg-[#fffdfd]">
-        <p className="text-lg md:text-4xl font-bold">
+        <p className="text-lg md:text-4xl font-bold pl-4 lg:px2">
           Trending dining out restaurants in Connaught Place
         </p>
         <DiningRes diningdata={diningdata} />

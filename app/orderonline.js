@@ -2,7 +2,10 @@ import { Orderonlinenavbar } from "../Components/Orderonline/orderonlinenav";
 import img from "../Assets/Homepage/Dining.png";
 import flag from "../Assets/navbar_img/flag.png";
 import Image from "next/image";
-import { Carousel_Online } from "../Components/Orderonline/Carousel.js";
+import {
+  Carousel_Online,
+  Carousel_Online_one,
+} from "../Components/Orderonline/Carousel.js";
 import { Allres } from "../Components/Orderonline/Allres.js";
 import {
   biryani,
@@ -187,7 +190,7 @@ const Orderonline = () => {
           <p className="text-xl md:text-4xl my-1 md:my-4 ">
             Top Brands For You
           </p>
-          <Carousel_Online onlinedata={brands} />
+          <Carousel_Online_one onlinedata={brands} />
         </div>
         <Allres />
       </div>

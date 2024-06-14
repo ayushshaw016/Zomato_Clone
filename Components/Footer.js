@@ -7,12 +7,10 @@ const Footer = () => {
   return (
     <>
       <div className="bg-gray-100 pb-8">
-        <div className="flex flex-row justify-between pt-6 mx-24">
-          <div className="">
-            <h2 className="text-5xl">zomato</h2>
-          </div>
-          <div className="justify-center items-center">
-            <span className="mx-4 border border-solid border-gray-300 px-4 py-2">
+        <div className="flex flex-col md:flex-row justify-between pt-6 mx-4  md:mx-24">
+          <h2 className="text-3xl md:text-5xl">zomato</h2>
+          <div className="lg:justify-center items-center mt-3">
+            <span className="mx-4 border border-solid border-gray-300 py-2 px-4">
               <span className="inline-block mr-2">
                 <Image src={flag} className="h-4 w-4" />
               </span>
@@ -39,37 +37,51 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row mx-24 mt-8 justify-around">
+        <div className="flex flex-row mx-3 lg:mx-24 mt-8 justify-around">
           <div>
-            <h2 className="tracking-widest text-xl">ABOUT ZOMATO</h2>
-            <p className="text-md text-gray-600 my-2">Who We Are</p>
-            <p className="text-md text-gray-600 my-2">Blog</p>
-            <p className="text-md text-gray-600 my-2">Work With Us</p>
-            <p className="text-md text-gray-600 my-2">Investors Relations</p>
-            <p className="text-md text-gray-600 my-2">Report Fraud</p>
-            <p className="text-md text-gray-600 my-2">Press Kit</p>
-            <p className="text-md text-gray-600 my-2">Contact US</p>
+            <h2 className="tracking-widest text-sm xl:text-xl">ABOUT ZOMATO</h2>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Who We Are</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Blog</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">
+              Work With Us
+            </p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">
+              Investors Relations
+            </p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">
+              Report Fraud
+            </p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Press Kit</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Contact US</p>
           </div>
           <div>
-            <h2 className="tracking-widest text-xl">ZOMAVERSE</h2>
-            <p className="text-md text-gray-600 my-2">Zomato</p>
-            <p className="text-md text-gray-600 my-2">Blinkit</p>
-            <p className="text-md text-gray-600 my-2">Feeding India</p>
-            <p className="text-md text-gray-600 my-2">Hyperpure</p>
-            <p className="text-md text-gray-600 my-2">Zomaland</p>
+            <h2 className="tracking-widest text-sm xl:text-xl">ZOMAVERSE</h2>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Zomato</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Blinkit</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">
+              Feeding India
+            </p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Hyperpure</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Zomaland</p>
           </div>
           <div>
-            <h2 className="tracking-widest text-xl">FOR RESTAURANTS</h2>
-            <p className="text-md text-gray-600 my-2">Partner With US</p>
-            <p className="text-md text-gray-600 my-2">Apps For You</p>
+            <h2 className="tracking-widest text-wrap text-sm xl:text-xl">
+              FOR RESTAURANTS
+            </h2>
+            <p className="text-xs xl:text-md text-gray-600 my-2">
+              Partner With US
+            </p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">
+              Apps For You
+            </p>
           </div>
 
           <div>
-            <h2 className="tracking-widest text-xl">LEARN MORE</h2>
-            <p className="text-md text-gray-600 my-2">Privacy</p>
-            <p className="text-md text-gray-600 my-2">Security</p>
-            <p className="text-md text-gray-600 my-2">Terms</p>
-            <p className="text-md text-gray-600 my-2">Sitemap</p>
+            <h2 className="tracking-widest text-sm xl:text-xl">LEARN MORE</h2>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Privacy</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Security</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Terms</p>
+            <p className="text-xs xl:text-md text-gray-600 my-2">Sitemap</p>
           </div>
           <div>
             <div>
@@ -101,28 +113,22 @@ const Footer = () => {
               </span>
             </div>
             <div className="flex flex-col">
-              <div
-                className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4  "
-                style={{ width: "20vw" }}
-              >
+              <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
                 <span className="inline-block mb-1 mx-3">
                   <Image src={flag} className="w-6 h-6" />
                 </span>
                 <span className="inline-block   text-white">
-                  <p className="text-xs">Download on the</p>
-                  <p className="text-lg font-bold">App Store</p>
+                  <p className="text-xs">Download on </p>
+                  <p className="text-sm md:text-lg font-bold">App Store</p>
                 </span>
               </div>
-              <div
-                className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4"
-                style={{ width: "20vw" }}
-              >
+              <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
                 <span className="inline-block mb-1 mx-3">
                   <Image src={flag} className="w-6 h-6" />
                 </span>
                 <span className="inline-block   text-white">
                   <p className="text-xs">Get it on</p>
-                  <p className="text-lg font-bold">Google Play</p>
+                  <p className="text-sm md:text-lg font-bold">Google Play</p>
                 </span>
               </div>
             </div>

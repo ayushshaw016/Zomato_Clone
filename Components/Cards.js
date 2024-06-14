@@ -27,21 +27,24 @@ const Hmpgcard1 = ({ cards }) => {
 const Hmpgcard2 = ({ cards }) => {
   return (
     <>
-      <div className="flex md:flex-row mt-6 mb-16 mx-6 flex-col">
+      <div className="md:mt-6 mb-6 md:md-10 mx-1  grid grid-cols-2 md:grid-cols-4 ">
         {cards.map((data, index) => (
           <div
-            className="w-full md:w-1/4 rounded-3xl mx-3 md:mx-4 hover:cursor-pointer mt-16 md:mt-0"
+            className="w-full rounded-3xl ml-1 md:ml-1 hover:cursor-pointer mt-4 md:mt-0 mx-auto"
             key={index}
           >
-            <Image src={data.img} style={{ width: "100vw", height: "50vh" }} />
-            <div className="-mt-24 md:-mt-14 text-wrap ml-4 text-white">
+            <Image
+              src={data.img}
+              className="h-[25vh] w-[40vw] md:h-[40vh] md:w-[80vw]"
+            />
+            <div className="-mt-10 md:-mt-14 text-wrap ml-4 text-white">
               <p
-                className="text-xl font-bold"
+                className="text-sm md:text-md lg:text-lg  font-bold"
                 style={{ wordSpacing: "0.25rem" }}
               >
                 {data.collection}
               </p>
-              <p className="text-lg">{data.places}</p>
+              <p className="text-xs md:text-md lg:text-lg">{data.places}</p>
             </div>
           </div>
         ))}
@@ -51,16 +54,19 @@ const Hmpgcard2 = ({ cards }) => {
 };
 const Localatiescard = ({ localitydata }) => {
   return (
-    <div className="grid grid-cols-3 gap-6 mt-8 mb-16 mx-6">
+    <div className="grid grid-cols-3 gap-6 mt-8 mb-6 md:mb-16 mx-6">
       {localitydata.map((data, index) => (
         <div
           className="mx-4 hover:cursor-pointer border border-solid border-gray-300 rounded-xl px-4 hover:shadow-lg"
           key={index}
         >
-          <p className="text-2xl my-2" style={{ wordSpacing: "0.25rem" }}>
+          <p
+            className="text-sm md:text-xl md:my-2"
+            style={{ wordSpacing: "0.25rem" }}
+          >
             {data.placename}
           </p>
-          <p className="text-lg my-2">
+          <p className="text-xs md:text-lg md:my-2">
             {data.count}{" "}
             <span className="flex float-right text-2xl ">&gt;</span>
           </p>
@@ -73,14 +79,20 @@ const Localatiescard = ({ localitydata }) => {
 const Nearme = ({ options }) => {
   return (
     <>
-      <div className="py-16">
+      <div className=" pt-1 md:pt-4 sm:pt-6 md:py-12">
         {options.map((data, index) => (
           <div
-            className=" border border-solid border-gray-300 text-2xl mt-6 rounded-xl  hover:shadow-xl"
+            className=" border border-solid border-gray-300 text-md md:text-xl  lg:text-2xl md:mt-6 rounded-xl  hover:shadow-xl my-2"
             key={index}
           >
-            <select className="w-full px-6 py-6 hover:cursor-pointer" disabled>
-              <option value={data.text} className="text-3xl">
+            <select
+              className="w-full px-2 py-2 sm:px-4 sm:py-4 md:px-6 md:py-6 hover:cursor-pointer"
+              disabled
+            >
+              <option
+                value={data.text}
+                className="text-md md:text-xl lg:text-3xl"
+              >
                 {data.text}
               </option>
             </select>

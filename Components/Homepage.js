@@ -3,6 +3,7 @@ import { GettheApp } from "./Gettheapp";
 // import bg_image from "../Assets/navbar_img/navbar_bg.png";
 import { Footer } from "./Footer";
 import Image from "next/image";
+import { Navbar } from "@/Components/Navabar";
 
 import {
   Dining,
@@ -95,63 +96,70 @@ const Homepage = () => {
   ];
   return (
     <>
-      <div className="mx-6 mt-16 mb-8 flex flex-col  sm:flex-row">
-        <div className="w-full md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-16 md:mt-0">
+      <Navbar />
+      <div className="mx-3 mt-16 mb-8 flex flex-col  sm:flex-row justify-around">
+        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0">
           <Link href="/orderonline">
             <Image
               src={online_food}
               alt="error"
-              style={{ position: "center", width: "100vw", height: "30vh" }}
-              className="rounded-t-3xl "
+              style={{ position: "center" }}
+              className="rounded-t-3xl w-[70vw] h-[20vh] md:h-[30vh]"
             />
-            <p className="text-2xl mx-2 font-bold my-2">Order Online</p>
-            <p className="text-lg text mx-2 font-thin text-gray-500 my-2">
+            <p className="text-sm md:text-lg lg:text-xl mx-2 font-bold ">
+              Order Online
+            </p>
+            <p className="text-sm md:text-md  text mx-2 font-thin text-gray-500">
               Stay home and Order to you door step
             </p>
           </Link>
         </div>
-        <div className="w-full md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-16 md:mt-0">
+        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0">
           <Image
             src={Dining}
             alt="error"
-            style={{ position: "center", width: "100vw", height: "30vh" }}
-            className="rounded-t-3xl"
+            style={{ position: "center" }}
+            className="rounded-t-3xl w-[70vw] h-[20vh] md:h-[30vh]"
           />
-          <p className="text-2xl mx-2 font-bold my-2">Dining</p>
-          <p className="text-lg text mx-2 font-thin text-gray-500 my-2">
+          <p className="text-sm md:text-lg lg:text-xl mx-2 font-bold ">
+            Dining
+          </p>
+          <p className="text-sm md:text-md  mx-2 font-thin text-gray-500 ">
             View the City's favorite dining venues
           </p>
         </div>
-        <div className="w-full md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-16 md:mt-0">
+        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0">
           <Image
             src={Nightlife}
             alt="error"
-            style={{ position: "center", width: "100vw", height: "30vh" }}
-            className="rounded-t-3xl"
+            style={{ position: "center" }}
+            className="rounded-t-3xl w-[70vw] h-[20vh] md:h-[30vh]"
           />
-          <p className="text-2xl mx-2 font-bold my-2">Nightlife and Clubs</p>
-          <p className="text-lg text mx-2 font-thin text-gray-500 my-2">
+          <p className="text-sm md:text-md lg:text-xl mx-2 font-bold ">
+            Nightlife and Clubs
+          </p>
+          <p className="text-sm md:text-md mx-2 font-thin text-gray-500 ">
             Explore the city's top nightlife outlets
           </p>
         </div>
       </div>
-      <div className="mt-4 mx-12">
-        <div className="">
-          <h2 className="text-4xl font-bold ml-6">Collections</h2>
-          <div className="flex flex-col lg:flex-row justify-between">
-            <div className="text-xl mt-3 ">
-              Explore curated lists of top restaurants, cafes, pubs, and bars in
-              Delhi NCR, based on trends
-            </div>
-            <div className="text-red-400  mt-3">
-              All Collectiuon in Delhi NCR &gt;
-            </div>
+      <div className="mt-4 mx-4 md:mx-12">
+        <h2 className="text-xl md:text-2xl lg:text-4xl font-bold ml-6">
+          Collections
+        </h2>
+        <div className="flex flex-col lg:flex-row md:justify-between">
+          <div className="text-md md:text-xl mt-1 md:mt-3 ">
+            Explore curated lists of top restaurants, cafes, pubs, and bars in
+            Delhi NCR, based on trends
+          </div>
+          <div className="text-red-400  mt-3">
+            All Collectiuon in Delhi NCR &gt;
           </div>
         </div>
         <Hmpgcard2 cards={card2data} />
       </div>
-      <div className="mx-6 lg:mx-16 ">
-        <h2 className="text-4xl mb-8">
+      <div className="mx-8 lg:mx-16 ">
+        <h2 className="text-lg font-bold lg:text-3xl mb-2 md:mb-8">
           Popular Localities in and around Delhi NCR
         </h2>
       </div>
@@ -160,8 +168,10 @@ const Homepage = () => {
         <GettheApp />
       </div>
       <div className="bg-slate-50">
-        <div className="mx-20 mt-6">
-          <h2 className="text-4xl mb-4">Explore options near me</h2>
+        <div className="mx-4 md:mx-20 pt-6">
+          <h2 className="text-lg sm:text-xl md:text-3xl lg:text-4xl mb-4">
+            Explore options near me
+          </h2>
           <Nearme options={options} />
         </div>
       </div>
