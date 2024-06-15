@@ -98,8 +98,8 @@ const Homepage = () => {
     <>
       <Navbar />
       <div className="mx-3 mt-16 mb-8 flex flex-col  sm:flex-row justify-around">
-        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0">
-          <Link href="/orderonline">
+        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0 hover:scale-105">
+          <Link href="/orderonlineroute">
             <Image
               src={online_food}
               alt="error"
@@ -114,21 +114,23 @@ const Homepage = () => {
             </p>
           </Link>
         </div>
-        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0">
-          <Image
-            src={Dining}
-            alt="error"
-            style={{ position: "center" }}
-            className="rounded-t-3xl w-[70vw] h-[20vh] md:h-[30vh]"
-          />
-          <p className="text-sm md:text-lg lg:text-xl mx-2 font-bold ">
-            Dining
-          </p>
-          <p className="text-sm md:text-md  mx-2 font-thin text-gray-500 ">
-            View the City's favorite dining venues
-          </p>
+        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0 hover:scale-105">
+          <Link href="/diningoutroute">
+            <Image
+              src={Dining}
+              alt="error"
+              style={{ position: "center" }}
+              className="rounded-t-3xl w-[70vw] h-[20vh] md:h-[30vh]"
+            />
+            <p className="text-sm md:text-lg lg:text-xl mx-2 font-bold ">
+              Dining
+            </p>
+            <p className="text-sm md:text-md  mx-2 font-thin text-gray-500 ">
+              View the City's favorite dining venues
+            </p>
+          </Link>
         </div>
-        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0">
+        <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0 hover:scale-105">
           <Image
             src={Nightlife}
             alt="error"

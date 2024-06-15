@@ -18,6 +18,7 @@ import {
   res9,
 } from "../Orderonline/Restaurnts/res.js";
 import { Footer } from "../Footer";
+import Link from "next/link";
 const DiningInnav = () => {
   // Dining res data
   const diningdata = [
@@ -215,7 +216,11 @@ const DiningInnav = () => {
     <>
       <nav className="px-3 pb-4 bg-white border-b-2 border-solid  border-black">
         <ul className="flex flex-row justify-between">
-          <li className="text-2xl sm:text-3xl lg:text-6xl font-bold">zomato</li>
+          <Link href="/">
+            <li className="text-2xl sm:text-3xl lg:text-6xl font-bold">
+              zomato
+            </li>
+          </Link>
 
           <li>
             <span className="inline-block">
@@ -228,27 +233,29 @@ const DiningInnav = () => {
             <span className="inline-block">
               <select
                 value="Ayush"
-                className="text-md md:text-xl lg:text-3xl hover:cursor-pointer"
+                className="text-xl md:text-2xl lg:text-4xl hover:cursor-pointer"
               >
-                <option className=" text-md md:text-lg  ">Profile </option>
-                <option className=" text-md md:text-lg  ">Notifications</option>
-                <option className=" text-md md:text-lg  ">Bookmarks</option>
-                <option className=" text-md md:text-lg  ">Reviews</option>
-                <option className=" text-md md:text-lg  ">Networks</option>
-                <option className=" text-md md:text-lg  ">Find Friends</option>
-                <option className=" text-md md:text-lg  ">Settings</option>
-                <option className=" text-md md:text-lg  ">Logout</option>
+                <option className=" text-xl md:text-2xl  ">Profile </option>
+                <option className=" text-xl md:text-2xl  ">
+                  Notifications
+                </option>
+                <option className=" text-xl md:text-2xl  ">Bookmarks</option>
+                <option className=" text-xl md:text-2xl  ">Reviews</option>
+                <option className=" text-xl md:text-2xl  ">Networks</option>
+                <option className=" text-xl md:text-2xl  ">Find Friends</option>
+                <option className=" text-xl md:text-2xl  ">Settings</option>
+                <option className=" text-xl md:text-2xl  ">Logout</option>
               </select>
             </span>
           </li>
         </ul>
       </nav>
       <div className="px-4  bg-white">
-        <p className="text-md md:text-lg lg:text-xl md:pt-4 text-gray-600">
+        <p className="text-md md:text-xl lg:text-2xl md:pt-6 text-gray-600">
           Home / India / Delhi NCR / Central Delhi /{" "}
           <span className="text-gray-400">Connaught Place Restaurants</span>
         </p>
-        <div className="pt-3 md:pt-4 lg:pt-6 flex flex-row justify-around md:justify-start">
+        <div className="pt-4 md:pt-8 lg:pt-12 flex flex-row justify-around md:justify-start">
           <div className="mr-8 border-b-4  border-solid border-red-700 my-1 md:my-4">
             <span className="inline-block">
               <Image
@@ -259,13 +266,15 @@ const DiningInnav = () => {
             <span className="text-xl md:text-3xl inline-block">Dining Out</span>
           </div>
           <div className="mr-8 text-gray-500 my-1 md:my-4">
-            <span className="inline-block">
-              <Image
-                src={flag}
-                className="w-6 h-6 md:w-8 md:h-8 rounded-full"
-              />
-            </span>
-            <span className="text-xl md:text-3xl inline-block">Delivery</span>
+            <Link href="/orderonlineroute">
+              <span className="inline-block">
+                <Image
+                  src={flag}
+                  className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                />
+              </span>
+              <span className="text-xl md:text-3xl inline-block">Delivery</span>
+            </Link>
           </div>
           <div className="mr-8 text-gray-500 inline-block my-1 md:my-4">
             <span className="inline-block">
@@ -305,20 +314,7 @@ const DiningInnav = () => {
           </div>
         </div>
       </div>
-      {/* <div className="flex justify-center my-3 md:my-8">
-        <Image src={off} className="w-[80vw] h-[50vh]" />
-      </div>
-      <div className="ml-48 -mt-44">
-        <h2 className="text-4xl w-[15vw] font-bold text-white">
-          Get Upto 50% off{" "}
-        </h2>
-        <p className="text-gray-400 text-2xl">
-          on your Dinig bills with zomato
-        </p>
-        <button className="text-md text-white bg-red-400 px-4 py-1 rounded-md">
-          Check out all the restaurants
-        </button>
-      </div> */}
+
       <div className="relative flex justify-center py-3 md:py-8 bg-white">
         <Image src={off} className="w-[80vw] h-[40vh]" />
         <div className="absolute top-2/3 left-0 transform -translate-y-1/2 ml-20 md:ml-40">

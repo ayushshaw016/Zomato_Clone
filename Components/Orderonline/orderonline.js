@@ -1,12 +1,9 @@
-import { Orderonlinenavbar } from "../Components/Orderonline/orderonlinenav";
-import img from "../Assets/Homepage/Dining.png";
-import flag from "../Assets/navbar_img/flag.png";
+import { Orderonlinenavbar } from "./orderonlinenav";
+import img from "../../Assets/Homepage/Dining.png";
+import flag from "../../Assets/navbar_img/flag.png";
 import Image from "next/image";
-import {
-  Carousel_Online,
-  Carousel_Online_one,
-} from "../Components/Orderonline/Carousel.js";
-import { Allres } from "../Components/Orderonline/Allres.js";
+import { Carousel_Online, Carousel_Online_one } from "./Carousel.js";
+import { Allres } from "./Allres.js";
 import {
   biryani,
   burger,
@@ -20,7 +17,7 @@ import {
   pizza,
   rolls,
   vegthali,
-} from "../Components/Orderonline/Dishes/dishes.js";
+} from "./Dishes/dishes.js";
 
 import {
   bakingo,
@@ -32,8 +29,9 @@ import {
   kfc,
   mcdonalds,
   pizzahut,
-} from "../Components/Orderonline/Brands/brands.js";
+} from "./Brands/brands.js";
 import { Footer } from "@/Components/Footer";
+import Link from "next/link";
 
 const Orderonline = () => {
   const onlinedata = [
@@ -137,13 +135,17 @@ const Orderonline = () => {
         </p>
         <div className="pt-4 md:pt-8 lg:pt-12 flex flex-row justify-around md:justify-start">
           <div className="mr-8 text-gray-500 my-1 md:my-4">
-            <span className="inline-block">
-              <Image
-                src={flag}
-                className="w-6 h-6 md:w-8 md:h-8 rounded-full"
-              />
-            </span>
-            <span className="text-xl md:text-3xl inline-block">Dining Out</span>
+            <Link href="/diningoutroute">
+              <span className="inline-block">
+                <Image
+                  src={flag}
+                  className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                />
+              </span>
+              <span className="text-xl md:text-3xl inline-block">
+                Dining Out
+              </span>
+            </Link>
           </div>
           <div className="mr-8 border-b-4  border-solid border-red-700 my-1 md:my-4">
             <span className="inline-block">

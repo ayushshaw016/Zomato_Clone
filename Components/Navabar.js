@@ -2,6 +2,7 @@ import React from "react";
 import bg_image from "../Assets/navbar_img/navbar_bg.png";
 import flag from "../Assets/navbar_img/flag.png";
 import Image from "next/image";
+import Link from "next/link";
 const Navbar = () => {
   return (
     <>
@@ -16,11 +17,15 @@ const Navbar = () => {
             <div className="hidden md:block text-sm md:text-xl">
               Get the App
             </div>
-            <div className="hidden md:block">
-              <ul className="flex flex-col md:flex-row">
-                <li className="text-md md:text-xl mx-10">Investor Relations</li>
+            <div className="block">
+              <ul className="flex flex-row">
+                <Link href="/investors">
+                  <li className="text-md md:text-xl mx-10">
+                    Investor Relations
+                  </li>
+                </Link>
                 <li className="mx-10 text-md text-xl">Add Restaurant</li>
-                <li className="mx-10">
+                <li className="mx-10 hidden md:block">
                   <span className="inline-block">
                     <Image
                       src={flag}

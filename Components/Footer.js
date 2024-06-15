@@ -8,7 +8,9 @@ const Footer = () => {
     <>
       <div className="bg-gray-100 pb-8">
         <div className="flex flex-col md:flex-row justify-between pt-6 mx-4  md:mx-24">
-          <h2 className="text-3xl md:text-5xl">zomato</h2>
+          <Link href="/">
+            <h2 className="text-3xl md:text-5xl">zomato</h2>
+          </Link>
           <div className="lg:justify-center items-center mt-3">
             <span className="mx-4 border border-solid border-gray-300 py-2 px-4">
               <span className="inline-block mr-2">
@@ -65,7 +67,7 @@ const Footer = () => {
             <p className="text-xs xl:text-md text-gray-600 my-2">Zomaland</p>
           </div>
           <div>
-            <h2 className="tracking-widest text-wrap text-sm xl:text-xl">
+            <h2 className="tracking-widest text-wrap text-sm xl:text-xl text-center md:text-left">
               FOR RESTAURANTS
             </h2>
             <p className="text-xs xl:text-md text-gray-600 my-2">

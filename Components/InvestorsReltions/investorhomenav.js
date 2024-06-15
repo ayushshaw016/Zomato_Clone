@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 const Investorhomenav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,7 +52,9 @@ const Investorhomenav = () => {
               <div className="flex flex-col  bg-red-500 text-white"></div>
               <div>
                 <p className="text-md sm:text-xl md:text-2xl lg:text-3xl">
-                  <span className="font-bold">Zomato</span>{" "}
+                  <Link href="/">
+                    <span className="font-bold">Zomato</span>{" "}
+                  </Link>
                   <span className="hidden xl:inline-block">
                     | Investors Relations
                   </span>
@@ -74,7 +77,9 @@ const Investorhomenav = () => {
             <div className="flex flex-row justify-around bg-red-500 text-white py-4">
               <div>
                 <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl">
-                  <span className="font-bold">Zomato</span>{" "}
+                  <Link href="/">
+                    <span className="font-bold">Zomato</span>{" "}
+                  </Link>
                   <span className="hidden xl:inline-block">
                     | Investors Relations
                   </span>

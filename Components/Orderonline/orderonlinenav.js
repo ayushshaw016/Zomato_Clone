@@ -1,12 +1,17 @@
 import Image from "next/image";
 import flag from "../../Assets/navbar_img/flag.png";
+import Link from "next/link";
 
 const Orderonlinenavbar = () => {
   return (
     <>
       <nav className="px-3 pb-4 bg-white border-b-2 border-solid  border-black">
         <ul className="flex flex-row justify-between">
-          <li className="text-2xl sm:text-3xl lg:text-6xl font-bold">zomato</li>
+          <Link href="/">
+            <li className="text-2xl sm:text-3xl lg:text-6xl font-bold">
+              zomato
+            </li>
+          </Link>
 
           <li>
             <span className="inline-block">
