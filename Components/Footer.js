@@ -12,25 +12,25 @@ const Footer = () => {
             <h2 className="text-3xl md:text-5xl">zomato</h2>
           </Link>
           <div className="lg:justify-center items-center mt-3">
-            <span className="mx-4 border border-solid border-gray-300 py-2 px-4">
+            <span className="mx-2 border border-solid border-gray-300 py-1 px-1 md:py-1 md:px-4">
               <span className="inline-block mr-2">
                 <Image src={flag} className="h-4 w-4" />
               </span>
               <span className="inline-block">
-                <select className="text-xl bg-gray-100" disabled>
-                  <option value="India" className="text-3xl">
+                <select className="md:text-xl bg-gray-100" disabled>
+                  <option value="India" className="md:text-3xl">
                     India
                   </option>
                 </select>
               </span>
             </span>
-            <span className="mx-4 border border-solid border-gray-300 px-4 py-2">
+            <span className="mx-2 border border-solid border-gray-300 py-1 px-1 md:py-1 md:px-4">
               <span className="inline-block mr-2 ">
                 <Image src={language} className="h-4 w-4 " />
               </span>
               <span className="inline-block">
-                <select className="text-xl bg-gray-100" disabled>
-                  <option value="India" className="text-3xl">
+                <select className="md:text-xl bg-gray-100" disabled>
+                  <option value="India" className="md:text-3xl">
                     English
                   </option>
                 </select>
@@ -86,7 +86,7 @@ const Footer = () => {
             <p className="text-xs xl:text-md text-gray-600 my-2">Sitemap</p>
           </div>
           <div>
-            <div>
+            <div className="hidden md:block">
               <h2 className="tracking-widest text-xl">Social Links</h2>
               <span className="my-2 inline-block ml-2">
                 <Link href="">
@@ -114,7 +114,7 @@ const Footer = () => {
                 </Link>
               </span>
             </div>
-            <div className="sm:flex sm:flex-col hidden">
+            <div className="md:flex md:flex-col hidden">
               <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
                 <span className="inline-block mb-1 mx-3">
                   <Image src={flag} className="w-6 h-6" />
@@ -136,9 +136,36 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="flex flex-row sm:hidden">
-          <div className="px-2 mx-3 inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
+        <div className="md:hidden ml-3 mt-2">
+          <h2 className="tracking-widest text-xl">Social Links</h2>
+          <span className="my-2 inline-block ml-2">
+            <Link href="">
+              <Image src={flag} className="rounded-full w-6 h-6" />
+            </Link>
+          </span>
+          <span className="my-2 inline-block ml-2">
+            <Link href="">
+              <Image src={flag} className="rounded-full w-6 h-6" />
+            </Link>
+          </span>
+          <span className="my-2 inline-block ml-2">
+            <Link href="">
+              <Image src={flag} className="rounded-full w-6 h-6" />
+            </Link>
+          </span>
+          <span className="my-2 inline-block ml-2">
+            <Link href="">
+              <Image src={flag} className="rounded-full w-6 h-6" />
+            </Link>
+          </span>
+          <span className="my-2 inline-block ml-2">
+            <Link href="">
+              <Image src={flag} className="rounded-full w-6 h-6" />
+            </Link>
+          </span>
+        </div>
+        <div className="flex flex-row md:hidden">
+          <div className="px-2 mx-3 inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[22vw] md:w-[24vw] lg:w-[15vw] xl:w-[13vw]">
             <span className="inline-block mb-1 mx-3">
               <Image src={flag} className="w-6 h-6" />
             </span>
@@ -147,7 +174,7 @@ const Footer = () => {
               <p className="text-sm md:text-md font-bold">App Store</p>
             </span>
           </div>
-          <div className="px-2 inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
+          <div className="px-2 inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[22vw] md:w-[24] lg:w-[15vw] xl:w-[13vw]">
             <span className="inline-block mb-1 mx-3">
               <Image src={flag} className="w-6 h-6" />
             </span>
