@@ -277,12 +277,14 @@ const DiningInnav = () => {
             </Link>
           </div>
           <div className="mr-8 text-gray-500 inline-block my-1 md:my-4">
-            <span className="inline-block">
-              <Image
-                src={flag}
-                className="w-6 h-6 md:w-8 md:h-8 rounded-full"
-              />
-            </span>
+            <Link href="/nightliferoute">
+              <span className="inline-block">
+                <Image
+                  src={flag}
+                  className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                />
+              </span>
+            </Link>
             <span className="text-xl md:text-3xl inline-block">Nightlife</span>
           </div>
         </div>

@@ -157,13 +157,17 @@ const Orderonline = () => {
             <span className="text-xl md:text-3xl inline-block">Delivery</span>
           </div>
           <div className="mr-8 text-gray-500 inline-block my-1 md:my-4">
-            <span className="inline-block">
-              <Image
-                src={flag}
-                className="w-6 h-6 md:w-8 md:h-8 rounded-full"
-              />
-            </span>
-            <span className="text-xl md:text-3xl inline-block">Nightlife</span>
+            <Link href="/nighliferoute">
+              <span className="inline-block">
+                <Image
+                  src={flag}
+                  className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                />
+              </span>
+              <span className="text-xl md:text-3xl inline-block">
+                Nightlife
+              </span>
+            </Link>
           </div>
         </div>
         <div className="py-4 flex flex-row justify-around md:justify-start">
