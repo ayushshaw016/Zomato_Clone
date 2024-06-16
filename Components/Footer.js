@@ -114,14 +114,14 @@ const Footer = () => {
                 </Link>
               </span>
             </div>
-            <div className="flex flex-col">
+            <div className="sm:flex sm:flex-col hidden">
               <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
                 <span className="inline-block mb-1 mx-3">
                   <Image src={flag} className="w-6 h-6" />
                 </span>
                 <span className="inline-block   text-white">
                   <p className="text-xs">Download on </p>
-                  <p className="text-sm md:text-lg font-bold">App Store</p>
+                  <p className="text-sm md:text-md font-bold">App Store</p>
                 </span>
               </div>
               <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
@@ -130,20 +130,32 @@ const Footer = () => {
                 </span>
                 <span className="inline-block   text-white">
                   <p className="text-xs">Get it on</p>
-                  <p className="text-sm md:text-lg font-bold">Google Play</p>
+                  <p className="text-sm md:text-md font-bold">Google Play</p>
                 </span>
               </div>
             </div>
           </div>
-          {/* <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4">
-            <span className="inline-block">
-              <Image src={Nightlife} className="w-10 h-10 mt-2 mx-2" />
+        </div>
+
+        <div className="flex flex-row sm:hidden">
+          <div className="px-2 mx-3 inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
+            <span className="inline-block mb-1 mx-3">
+              <Image src={flag} className="w-6 h-6" />
             </span>
-            <span className="inline-block mx-4 text-white">
-              <p className="text-sm font-thin">GET IT ON</p>
-              <p className="text-md">Google Play</p>
+            <span className="inline-block   text-white">
+              <p className="text-xs">Download on </p>
+              <p className="text-sm md:text-md font-bold">App Store</p>
             </span>
-          </div> */}
+          </div>
+          <div className="px-2 inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
+            <span className="inline-block mb-1 mx-3">
+              <Image src={flag} className="w-6 h-6" />
+            </span>
+            <span className="inline-block   text-white">
+              <p className="text-xs">Get it on</p>
+              <p className="text-sm md:text-md font-bold">Google Play</p>
+            </span>
+          </div>
         </div>
         <p className="border border-solid border-t-2  mx-4 md:mx-8 lg:mx-24"></p>
         <p className="mx-4 md:mx-8 lg:mx-24 mt-4 text-gray-700">

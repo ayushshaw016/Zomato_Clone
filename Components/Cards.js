@@ -30,7 +30,7 @@ const Hmpgcard2 = ({ cards }) => {
       <div className="md:mt-6 mb-6 md:md-10 mx-1  grid grid-cols-2 md:grid-cols-4 ">
         {cards.map((data, index) => (
           <div
-            className="w-full rounded-3xl ml-1 md:ml-1 hover:cursor-pointer mt-4 md:mt-0 mx-auto"
+            className="w-full rounded-3xl ml-1 md:ml-1 hover:cursor-pointer mt-4 md:mt-0 mx-auto md:w-[22vw] md:mx-3"
             key={index}
           >
             <Image
