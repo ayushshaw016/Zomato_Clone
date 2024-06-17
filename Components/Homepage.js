@@ -131,18 +131,20 @@ const Homepage = () => {
           </Link>
         </div>
         <div className="w-auto md:w-1/3 mx-auto md:ml-8 border border-gray-400 border-solid rounded-3xl  hover:cursor-pointer mt-8 md:mt-0 hover:scale-105">
-          <Image
-            src={Nightlife}
-            alt="error"
-            style={{ position: "center" }}
-            className="rounded-t-3xl w-[70vw] h-[20vh] md:h-[30vh]"
-          />
-          <p className="text-sm md:text-md lg:text-xl mx-2 font-bold ">
-            Nightlife and Clubs
-          </p>
-          <p className="text-sm md:text-md mx-2 font-thin text-gray-500 ">
-            Explore the city's top nightlife outlets
-          </p>
+          <Link href="/nightliferoute">
+            <Image
+              src={Nightlife}
+              alt="error"
+              style={{ position: "center" }}
+              className="rounded-t-3xl w-[70vw] h-[20vh] md:h-[30vh]"
+            />
+            <p className="text-sm md:text-md lg:text-xl mx-2 font-bold ">
+              Nightlife and Clubs
+            </p>
+            <p className="text-sm md:text-md mx-2 font-thin text-gray-500 ">
+              Explore the city's top nightlife outlets
+            </p>
+          </Link>
         </div>
       </div>
       <div className="mt-4 mx-4 md:mx-12">

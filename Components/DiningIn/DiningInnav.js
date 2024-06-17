@@ -284,8 +284,10 @@ const DiningInnav = () => {
                   className="w-6 h-6 md:w-8 md:h-8 rounded-full"
                 />
               </span>
+              <span className="text-xl md:text-3xl inline-block">
+                Nightlife
+              </span>
             </Link>
-            <span className="text-xl md:text-3xl inline-block">Nightlife</span>
           </div>
         </div>
       </div>

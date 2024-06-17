@@ -157,7 +157,7 @@ const Orderonline = () => {
             <span className="text-xl md:text-3xl inline-block">Delivery</span>
           </div>
           <div className="mr-8 text-gray-500 inline-block my-1 md:my-4">
-            <Link href="/nighliferoute">
+            <Link href="/nightliferoute">
               <span className="inline-block">
                 <Image
                   src={flag}
