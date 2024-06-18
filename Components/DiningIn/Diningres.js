@@ -3,7 +3,7 @@ import { rating } from "../Orderonline/Restaurnts/res";
 const DiningRes = ({ diningdata }) => {
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3  gap-4 mt-6 bg-[#fffdfd]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-4 mt-6 bg-[#fffdfd]">
         {diningdata.map((res, index) => (
           <div
             key={index}
@@ -11,7 +11,7 @@ const DiningRes = ({ diningdata }) => {
           >
             <Image
               src={res.ihmage}
-              className="w-full h-[20vh] md:h-[25vh] lg:h-[30vh]  rounded-md md:rounded-3xl"
+              className="w-full h-[20vh] md:h-[25vh] lg:h-[30vh]  rounded-xl md:rounded-3xl"
               // style={{ height: "40vh" }}
             />
             <div className="ml-2 flex justify-between items-start">
@@ -29,12 +29,6 @@ const DiningRes = ({ diningdata }) => {
               <span className="inline-block float-right">
                 <span className="text-xs md:text-md block mr-10 px-1 md:px-2 text-white bg-green-800 rounded-md mt-1">
                   {res.rating}
-                  <span className="inline-block">
-                    <Image
-                      src={rating}
-                      className="ml-1 md:ml-3 mb-1 w-4 h-4 inline-block opacity-40 rounded-md"
-                    />
-                  </span>
                 </span>
                 <span className="block mt-1 font-sans tracking-widest text-xs md:text-md text-gray-400 font-thin">
                   ₹{res.cost} for one

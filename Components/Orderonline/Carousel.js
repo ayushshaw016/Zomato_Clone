@@ -101,7 +101,7 @@ const Carousel_Online_one = ({ onlinedata }) => {
 const Restaurants = ({ restaurantdata }) => {
   return (
     <>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
         {restaurantdata.map((res, index) => (
           <div
             key={index}
@@ -119,12 +119,6 @@ const Restaurants = ({ restaurantdata }) => {
               <span className="block md:inline-block float-right">
                 <span className="block mr-10 pl-2 text-white bg-green-800 rounded-md mt-1">
                   {res.raiting}
-                  <span className="inline-block">
-                    <Image
-                      src={rating}
-                      className="ml-3 mb-1 w-4 h-4 inline-block opacity-40 rounded-md"
-                    />
-                  </span>
                 </span>
                 <span className="block mt-1 font-sans tracking-widest text-md text-gray-400 font-thin">
                   ₹{res.amount}

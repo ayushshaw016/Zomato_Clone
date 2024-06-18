@@ -59,7 +59,7 @@ const Nightlifecard = ({ collections }) => {
 const Nightliferes = ({ restaurantdata }) => {
   return (
     <>
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 mt-6 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-6 ">
         {restaurantdata.map((res, index) => (
           <div
             key={index}
