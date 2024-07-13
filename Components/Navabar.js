@@ -3,6 +3,7 @@ import bg_image from "../Assets/navbar_img/navbar_bg.png";
 import flag from "../Assets/navbar_img/flag.png";
 import Image from "next/image";
 import Link from "next/link";
+import profile from "../Assets/Icons/profile.png";
 const Navbar = () => {
   return (
     <>
@@ -28,7 +29,7 @@ const Navbar = () => {
                 <li className="mx-10 hidden md:block">
                   <span className="inline-block">
                     <Image
-                      src={flag}
+                      src={profile}
                       className=" w-4 h-4 md:w-6 md:h-6 mx-2 rounded-full"
                     />
                   </span>

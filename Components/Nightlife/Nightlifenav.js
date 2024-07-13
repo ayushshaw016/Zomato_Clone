@@ -1,7 +1,7 @@
 import Image from "next/image";
 import flag from "../../Assets/navbar_img/flag.png";
 import Link from "next/link";
-
+import profile from "../../Assets/Icons/profile.png";
 const Nightlifenavbar = () => {
   return (
     <>
@@ -16,7 +16,7 @@ const Nightlifenavbar = () => {
           <li>
             <span className="inline-block">
               <Image
-                src={flag}
+                src={profile}
                 className="w-4 h-4 md:w-8 md:h-8 rounded-full hover:scale-125 hover:cursor-pointer"
               />
             </span>

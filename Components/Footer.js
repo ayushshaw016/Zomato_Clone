@@ -1,6 +1,13 @@
 import bg_image from "../Assets/navbar_img/navbar_bg.png";
 import flag from "../Assets/navbar_img/flag.png";
+import insta from "../Assets/Icons/insta.png";
+import twitter from "../Assets/Icons/twitter.png";
+import facebook from "../Assets/Icons/facebook.png";
 import language from "../Assets/navbar_img/Language.png";
+import youtube from "../Assets/Icons/youtube.png";
+import linkedin from "../Assets/Icons/linkedin.png";
+import apple from "../Assets/Icons/apple.png";
+import playstore from "../Assets/Icons/playstore.png";
 import Image from "next/image";
 import Link from "next/link";
 const Footer = () => {
@@ -89,49 +96,53 @@ const Footer = () => {
             <div className="hidden md:block">
               <h2 className="tracking-widest text-xl">Social Links</h2>
               <span className="my-2 inline-block ml-2">
-                <Link href="">
-                  <Image src={flag} className="rounded-full w-6 h-6" />
+                <Link href="https://www.instagram.com/zomato/?hl=en">
+                  <Image src={insta} className="rounded-full w-6 h-6" />
                 </Link>
               </span>
               <span className="my-2 inline-block ml-2">
-                <Link href="">
-                  <Image src={flag} className="rounded-full w-6 h-6" />
+                <Link href="https://x.com/zomato?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+                  <Image src={twitter} className="rounded-full w-6 h-6" />
                 </Link>
               </span>
               <span className="my-2 inline-block ml-2">
-                <Link href="">
-                  <Image src={flag} className="rounded-full w-6 h-6" />
+                <Link href="https://www.facebook.com/zomato/">
+                  <Image src={facebook} className="rounded-full w-6 h-6" />
                 </Link>
               </span>
               <span className="my-2 inline-block ml-2">
-                <Link href="">
-                  <Image src={flag} className="rounded-full w-6 h-6" />
+                <Link href="https://www.youtube.com/channel/UCD7kbZQyYIR6RgJQYW9w0Tg">
+                  <Image src={youtube} className="rounded-full w-6 h-6" />
                 </Link>
               </span>
               <span className="my-2 inline-block ml-2">
-                <Link href="">
-                  <Image src={flag} className="rounded-full w-6 h-6" />
+                <Link href="https://www.linkedin.com/company/zomato/?originalSubdomain=in">
+                  <Image src={linkedin} className="rounded-full w-6 h-6" />
                 </Link>
               </span>
             </div>
             <div className="md:flex md:flex-col hidden">
               <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
-                <span className="inline-block mb-1 mx-3">
-                  <Image src={flag} className="w-6 h-6" />
-                </span>
-                <span className="inline-block   text-white">
-                  <p className="text-xs">Download on </p>
-                  <p className="text-sm md:text-md font-bold">App Store</p>
-                </span>
+                <Link href="https://www.zomato.com/mobile">
+                  <span className="inline-block mb-1 mx-3">
+                    <Image src={apple} className="w-6 h-6" />
+                  </span>
+                  <span className="inline-block   text-white">
+                    <p className="text-xs">Download on </p>
+                    <p className="text-sm md:text-md font-bold">App Store</p>
+                  </span>
+                </Link>
               </div>
               <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
-                <span className="inline-block mb-1 mx-3">
-                  <Image src={flag} className="w-6 h-6" />
-                </span>
-                <span className="inline-block   text-white">
-                  <p className="text-xs">Get it on</p>
-                  <p className="text-sm md:text-md font-bold">Google Play</p>
-                </span>
+                <Link href="https://www.zomato.com/mobile">
+                  <span className="inline-block mb-1 mx-3">
+                    <Image src={playstore} className="w-6 h-6" />
+                  </span>
+                  <span className="inline-block   text-white">
+                    <p className="text-xs">Get it on</p>
+                    <p className="text-sm md:text-md font-bold">Google Play</p>
+                  </span>
+                </Link>
               </div>
             </div>
           </div>
@@ -139,49 +150,53 @@ const Footer = () => {
         <div className="md:hidden ml-3 mt-2">
           <h2 className="tracking-widest text-xl">Social Links</h2>
           <span className="my-2 inline-block ml-2">
-            <Link href="">
-              <Image src={flag} className="rounded-full w-6 h-6" />
+            <Link href="https://www.instagram.com/zomato/?hl=en">
+              <Image src={insta} className="rounded-full w-6 h-6" />
             </Link>
           </span>
           <span className="my-2 inline-block ml-2">
-            <Link href="">
-              <Image src={flag} className="rounded-full w-6 h-6" />
+            <Link href="https://x.com/zomato?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+              <Image src={twitter} className="rounded-full w-6 h-6" />
             </Link>
           </span>
           <span className="my-2 inline-block ml-2">
-            <Link href="">
-              <Image src={flag} className="rounded-full w-6 h-6" />
+            <Link href="https://www.facebook.com/zomato/">
+              <Image src={facebook} className="rounded-full w-6 h-6" />
             </Link>
           </span>
           <span className="my-2 inline-block ml-2">
-            <Link href="">
-              <Image src={flag} className="rounded-full w-6 h-6" />
+            <Link href="https://www.youtube.com/channel/UCD7kbZQyYIR6RgJQYW9w0Tg">
+              <Image src={youtube} className="rounded-full w-6 h-6" />
             </Link>
           </span>
           <span className="my-2 inline-block ml-2">
-            <Link href="">
-              <Image src={flag} className="rounded-full w-6 h-6" />
+            <Link href="https://www.linkedin.com/company/zomato/?originalSubdomain=in">
+              <Image src={linkedin} className="rounded-full w-6 h-6" />
             </Link>
           </span>
         </div>
         <div className="flex flex-row md:hidden">
           <div className="px-2 mx-3 inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[22vw] md:w-[24vw] lg:w-[15vw] xl:w-[13vw]">
-            <span className="inline-block mb-1 mx-3">
-              <Image src={flag} className="w-6 h-6" />
-            </span>
-            <span className="inline-block   text-white">
-              <p className="text-xs">Download on </p>
-              <p className="text-sm md:text-md font-bold">App Store</p>
-            </span>
+            <Link href="https://www.zomato.com/mobile">
+              <span className="inline-block mb-1 mx-3">
+                <Image src={apple} className="w-6 h-6" />
+              </span>
+              <span className="inline-block   text-white">
+                <p className="text-xs">Download on </p>
+                <p className="text-sm md:text-md font-bold">App Store</p>
+              </span>
+            </Link>
           </div>
-          <div className="px-2 inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[22vw] md:w-[24] lg:w-[15vw] xl:w-[13vw]">
-            <span className="inline-block mb-1 mx-3">
-              <Image src={flag} className="w-6 h-6" />
-            </span>
-            <span className="inline-block   text-white">
-              <p className="text-xs">Get it on</p>
-              <p className="text-sm md:text-md font-bold">Google Play</p>
-            </span>
+          <div className="inline-block border border-solid border-black bg-[#1f4072] rounded-lg mt-4 sm:w-[20vw]  lg:w-[15vw] xl:w-[13vw]">
+            <Link href="https://www.zomato.com/mobile">
+              <span className="inline-block mb-1 mx-3">
+                <Image src={playstore} className="w-6 h-6" />
+              </span>
+              <span className="inline-block   text-white">
+                <p className="text-xs">Get it on</p>
+                <p className="text-sm md:text-md font-bold">Google Play</p>
+              </span>
+            </Link>
           </div>
         </div>
         <p className="border border-solid border-t-2  mx-4 md:mx-8 lg:mx-24"></p>

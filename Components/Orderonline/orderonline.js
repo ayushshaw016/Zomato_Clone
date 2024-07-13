@@ -4,6 +4,9 @@ import flag from "../../Assets/navbar_img/flag.png";
 import Image from "next/image";
 import { Carousel_Online, Carousel_Online_one } from "./Carousel.js";
 import { Allres } from "./Allres.js";
+import nightlife from "../../Assets/Icons/nightlife.png";
+import dinein from "../../Assets/Icons/dinein.png";
+import delivery from "../../Assets/Icons/delivery.png";
 import {
   biryani,
   burger,
@@ -138,8 +141,8 @@ const Orderonline = () => {
             <Link href="/diningoutroute">
               <span className="inline-block">
                 <Image
-                  src={flag}
-                  className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                  src={dinein}
+                  className="w-6 h-6 md:w-12 md:h-12 rounded-full"
                 />
               </span>
               <span className="text-xl md:text-3xl inline-block">
@@ -150,8 +153,8 @@ const Orderonline = () => {
           <div className="mr-8 border-b-4  border-solid border-red-700 my-1 md:my-4">
             <span className="inline-block">
               <Image
-                src={flag}
-                className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                src={delivery}
+                className="w-6 h-6 md:w-12 md:h-12 rounded-full"
               />
             </span>
             <span className="text-xl md:text-3xl inline-block">Delivery</span>
@@ -160,8 +163,8 @@ const Orderonline = () => {
             <Link href="/nightliferoute">
               <span className="inline-block">
                 <Image
-                  src={flag}
-                  className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                  src={nightlife}
+                  className="w-6 h-6 md:w-12 md:h-12 rounded-full"
                 />
               </span>
               <span className="text-xl md:text-3xl inline-block">

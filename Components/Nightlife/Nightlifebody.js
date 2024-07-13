@@ -2,6 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import flag from "../../Assets/navbar_img/flag.png";
 import off from "../DiningIn/DiningInAssets/50off.png";
+import nightlife from "../../Assets/Icons/nightlife.png";
+import dinein from "../../Assets/Icons/dinein.png";
+import delivery from "../../Assets/Icons/delivery.png";
 import {
   res1,
   res10,
@@ -743,8 +746,8 @@ const Nightlifebody = () => {
             <Link href="/diningoutroute">
               <span className="inline-block">
                 <Image
-                  src={flag}
-                  className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                  src={dinein}
+                  className="w-6 h-6 md:w-12 md:h-12 rounded-full"
                 />
               </span>
               <span className="text-xl md:text-3xl inline-block">
@@ -756,8 +759,8 @@ const Nightlifebody = () => {
             <Link href="/orderonlineroute">
               <span className="inline-block">
                 <Image
-                  src={flag}
-                  className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                  src={delivery}
+                  className="w-6 h-6 md:w-12 md:h-12 rounded-full"
                 />
               </span>
               <span className="text-xl md:text-3xl inline-block">Delivery</span>
@@ -766,8 +769,8 @@ const Nightlifebody = () => {
           <div className="mr-8  inline-block my-1 md:my-4 border-b-4  border-solid border-red-700">
             <span className="inline-block">
               <Image
-                src={flag}
-                className="w-6 h-6 md:w-8 md:h-8 rounded-full"
+                src={nightlife}
+                className="w-6 h-6 md:w-12 md:h-12 rounded-full"
               />
             </span>
             <span className="text-xl md:text-3xl inline-block">Nightlife</span>
